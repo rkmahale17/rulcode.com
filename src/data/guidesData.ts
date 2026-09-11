@@ -71,6 +71,13 @@ import { content as capTheoremContent } from "./guides/cap-theorem";
 import { content as consistencyModelsContent } from "./guides/consistency-models";
 import { content as nosqlDatabasesContent } from "./guides/nosql-databases";
 import { content as databaseScalingHighAvailabilityContent } from "./guides/database-scaling-high-availability";
+import { content as introductionToSystemDesignContent } from "./guides/introduction-to-system-design";
+import { content as deliveryFrameworkContent } from "./guides/delivery-framework";
+import { content as coreConceptsContent } from "./guides/core-concepts";
+import { content as keyTechnologiesContent } from "./guides/key-technologies";
+import { content as commonPatternsContent } from "./guides/common-patterns";
+import { content as networkingContent } from "./guides/networking";
+import { content as apiDesignContent } from "./guides/api-design";
 
 
 
@@ -1433,6 +1440,103 @@ Here is an overview of Space Complexity, followed by the reference table of stan
           linkedin: "https://linkedin.com/in/rkmahale"
         },
         content: databaseScalingHighAvailabilityContent,
+        questions: []
+      }
+    ]
+  },
+  {
+    id: "system-design",
+    title: "System Design",
+    guides: [
+      {
+        slug: "introduction-to-system-design",
+        title: "Introduction to System Design",
+        description: "Learn the essentials needed to pass a system design interview, types of interviews, and how to prepare.",
+        category: "system-design",
+        author: {
+          name: "Rahul Mahale",
+          role: "Senior SLB Engineer",
+          linkedin: "https://linkedin.com/in/rkmahale"
+        },
+        content: introductionToSystemDesignContent,
+        questions: []
+      },
+      {
+        slug: "delivery-framework",
+        title: "Delivery Framework",
+        description: "The best way to structure your system design interviews to structure your thoughts and focus on the most important aspects.",
+        category: "system-design",
+        author: {
+          name: "Rahul Mahale",
+          role: "Senior SLB Engineer",
+          linkedin: "https://linkedin.com/in/rkmahale"
+        },
+        content: deliveryFrameworkContent,
+        questions: []
+      },
+      {
+        slug: "core-concepts",
+        title: "Core Concepts",
+        description: "Learn the most important concepts you'll need for system design interviews, put together by FAANG managers and staff engineers.",
+        category: "system-design",
+        author: {
+          name: "Rahul Mahale",
+          role: "Senior SLB Engineer",
+          linkedin: "https://linkedin.com/in/rkmahale"
+        },
+        content: coreConceptsContent,
+        questions: []
+      },
+      {
+        slug: "key-technologies",
+        title: "Key Technologies",
+        description: "Learn about distributed locks, caches, and CDNs.",
+        category: "system-design",
+        author: {
+          name: "Rahul Mahale",
+          role: "Senior SLB Engineer",
+          linkedin: "https://linkedin.com/in/rkmahale"
+        },
+        content: keyTechnologiesContent,
+        questions: []
+      },
+      {
+        slug: "common-patterns",
+        title: "Common Patterns",
+        description: "The most common system design interview patterns, built by FAANG managers and staff engineers.",
+        category: "system-design",
+        author: {
+          name: "Rahul Mahale",
+          role: "Senior SLB Engineer",
+          linkedin: "https://linkedin.com/in/rkmahale"
+        },
+        content: commonPatternsContent,
+        questions: []
+      },
+      {
+        slug: "networking",
+        title: "Networking",
+        description: "Fundamentals of networking for system design, including protocols, load balancing, and handling latency.",
+        category: "system-design",
+        author: {
+          name: "Rahul Mahale",
+          role: "Senior SLB Engineer",
+          linkedin: "https://linkedin.com/in/rkmahale"
+        },
+        content: networkingContent,
+        questions: []
+      },
+      {
+        slug: "api-design",
+        title: "API Design",
+        description: "Learn how to design scalable, predictable APIs for system design interviews.",
+        category: "system-design",
+        author: {
+          name: "Rahul Mahale",
+          role: "Senior SLB Engineer",
+          linkedin: "https://linkedin.com/in/rkmahale"
+        },
+        content: apiDesignContent,
         questions: []
       }
     ]

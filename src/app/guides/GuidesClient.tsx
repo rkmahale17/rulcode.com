@@ -21,6 +21,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 
@@ -683,11 +684,22 @@ export default function GuidesClient({ guide }: GuidesClientProps) {
       },
       img({ src, alt }: any) {
         return (
-          <img
-            src={src}
-            alt={alt}
-            className="w-full max-w-[600px] h-auto my-6 rounded-xl border border-border/50 shadow-md object-cover hover:scale-[1.02] hover:shadow-lg transition-all duration-300 mx-auto block"
-          />
+          <Dialog>
+            <DialogTrigger asChild>
+              <img
+                src={src}
+                alt={alt}
+                className="w-full max-w-[600px] h-auto my-6 rounded-xl border border-border/50 shadow-md object-cover hover:scale-[1.02] hover:shadow-lg transition-all duration-300 mx-auto block cursor-zoom-in"
+              />
+            </DialogTrigger>
+            <DialogContent className="w-fit max-w-[95vw] max-h-[95vh] p-0 overflow-hidden bg-transparent border-none shadow-none flex justify-center items-center [&>button]:right-2 [&>button]:top-2 [&>button]:bg-background/80 [&>button]:p-1.5 [&>button]:rounded-full [&>button]:opacity-100 hover:[&>button]:bg-background">
+              <img
+                src={src}
+                alt={alt}
+                className="w-auto h-auto max-w-[95vw] max-h-[95vh] object-contain rounded-xl"
+              />
+            </DialogContent>
+          </Dialog>
         );
       },
       table({ children }: any) {
