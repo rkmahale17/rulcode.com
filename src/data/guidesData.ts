@@ -78,7 +78,10 @@ import { content as keyTechnologiesContent } from "./guides/key-technologies";
 import { content as commonPatternsContent } from "./guides/common-patterns";
 import { content as networkingContent } from "./guides/networking";
 import { content as apiDesignContent } from "./guides/api-design";
-
+import { content as dataModelingContent } from "./guides/data-modeling";
+import { content as cachingContent } from "./guides/caching";
+import { content as shardingContent } from "./guides/sharding";
+import { content as consistentHashingContent } from "./guides/consistent-hashing";
 
 
 export interface RelatedQuestion {
@@ -1537,6 +1540,58 @@ Here is an overview of Space Complexity, followed by the reference table of stan
           linkedin: "https://linkedin.com/in/rkmahale"
         },
         content: apiDesignContent,
+        questions: []
+      },
+      {
+        slug: "data-modeling",
+        title: "Data Modeling",
+        description: "Learn how to structure, store, and relate data for scale.",
+        category: "system-design",
+        author: {
+          name: "Rahul Mahale",
+          role: "Senior SLB Engineer",
+          linkedin: "https://linkedin.com/in/rkmahale"
+        },
+        content: dataModelingContent,
+        questions: []
+      },
+      {
+        slug: "caching",
+        title: "Caching",
+        description: "Understand caching patterns, eviction, and when to deploy caches in a distributed system.",
+        category: "system-design",
+        author: {
+          name: "Rahul Mahale",
+          role: "Senior SLB Engineer",
+          linkedin: "https://linkedin.com/in/rkmahale"
+        },
+        content: cachingContent,
+        questions: []
+      },
+      {
+        slug: "sharding",
+        title: "Sharding",
+        description: "Learn how horizontal partitioning scales databases past their physical limits.",
+        category: "system-design",
+        author: {
+          name: "Rahul Mahale",
+          role: "Senior SLB Engineer",
+          linkedin: "https://linkedin.com/in/rkmahale"
+        },
+        content: shardingContent,
+        questions: []
+      },
+      {
+        slug: "consistent-hashing",
+        title: "Consistent Hashing",
+        description: "Discover the algorithm that enables seamless scaling in distributed clusters.",
+        category: "system-design",
+        author: {
+          name: "Rahul Mahale",
+          role: "Senior SLB Engineer",
+          linkedin: "https://linkedin.com/in/rkmahale"
+        },
+        content: consistentHashingContent,
         questions: []
       }
     ]

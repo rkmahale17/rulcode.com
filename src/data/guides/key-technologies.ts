@@ -3,6 +3,8 @@ export const content = `
 
 ## Distributed Locks
 
+![Distributed Lock](/images/system-design/distributed_lock.jpg)
+
 Distributed locks are essential mechanisms for ensuring that multiple independent processes do not simultaneously access or modify a shared resource. Typically implemented using fast, in-memory systems like Redis or ZooKeeper, they leverage atomic operations to guarantee exclusivity.
 
 For instance, you might use a Redis key like \`order_processing_99\` as a lock. A process attempts to set this key; if successful, it has acquired the lock. If another worker tries to set the same key, the operation fails, indicating the resource is busy. Once the first worker finishes, it deletes the key, releasing the lock.
@@ -37,6 +39,8 @@ Common use cases include:
 Redis and Memcached remain the industry standards for distributed caching. While Memcached focuses purely on simple string key-value storage, Redis offers advanced data structures like sorted sets, lists, and geospatial indexes.
 
 ## Content Delivery Networks (CDN)
+
+![CDN Architecture](/images/system-design/cdn_edge_caching.jpg)
 
 A Content Delivery Network (CDN) is a globally distributed network of proxy servers designed to serve content to users from locations geographically closest to them. This drastically reduces the physical distance data must travel, minimizing latency.
 

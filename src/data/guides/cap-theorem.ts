@@ -1,209 +1,67 @@
 export const content = `
-# CAP Theorem: The Telephone Game! ☎️
+# The CAP Theorem
 
-## ☎️ Introduction: The Separated Classrooms
+The CAP theorem is routinely a point of confusion for engineers, but it is fundamentally crucial to how you approach architectural design. During the non-functional requirements phase of a system design interview, understanding the trade-offs dictated by CAP will directly inform your database choices.
 
-Imagine two teachers, **Mrs. Smith (Node A)** and **Mr. Jones (Node B)**, sitting in separate classrooms:
+![CAP Theorem Triangle](/images/system-design/cap_theorem_triangle.jpg)
 
-Normally, they have a walkie-talkie to keep their lesson plans in sync:
-* **Consistency (C):** If Mrs. Smith changes the homework date, she tells Mr. Jones over the walkie-talkie. If a student asks either teacher, they both give the same date.
-* **Availability (A):** If a student asks a teacher a question, the teacher answers immediately. They never say: *"I cannot talk to you right now."*
+## What is the CAP Theorem?
 
-### The Disaster: A Network Partition (P)
-Suddenly, the walkie-talkie battery dies (the network connection is cut!). 
+At its core, the CAP theorem states that in any distributed data store, you can only mathematically guarantee **two** out of the following three properties at the same time:
 
-A student walks up to Mr. Jones and asks: *"When is the homework due?"* Mr. Jones cannot contact Mrs. Smith. He must choose:
-* **Choice 1 (Consistency / CP):** He says: *"I cannot answer you because my walkie-talkie is down."* (System is consistent, but **not Available**).
-* **Choice 2 (Availability / AP):** He guesses based on yesterday's info and gives an answer. (System is available, but **not Consistent** if Mrs. Smith changed the date recently).
+1. **Consistency (C):** Every read receives the most recent write or an error. If a value is updated on Node A, an instant read from Node B will reflect that exact update. (Note: This is "Strong Consistency", which is entirely different from the "C" in database ACID properties).
+2. **Availability (A):** Every request receives a non-error response, regardless of the state of individual nodes. However, there is no guarantee that the response contains the most recent write.
+3. **Partition Tolerance (P):** The system continues to operate despite an arbitrary number of messages being dropped or delayed by the network between nodes.
 
-This is the **CAP Theorem**! In a distributed database, you **must** choose between Consistency or Availability when a network partition occurs.
+## The Practical Reality of CAP
 
----
+Here is the secret to mastering CAP in an interview: **In modern distributed systems, Partition Tolerance is not optional.** 
 
-## 📐 The CAP Theorem Pillars
+Networks are unreliable. Switches fail, fiber cables get cut, and firewalls misconfigure. Network partitions *will* happen. Therefore, you cannot sacrifice "P". 
 
-\`\`\`
-                             CAP TRIANGLE
-                             Consistent (C)
-                             /            \\
-                            /              \\
-                           /   [Impossible  \\
-                          /     in WANs]     \\
-                         /                    \\
-           Partition (P) ---------------------- Available (A)
-\`\`\`
+This means the CAP theorem really boils down to a binary choice during a network failure: **Do you prioritize Consistency (CP) or Availability (AP)?**
 
-In distributed systems, networks are guaranteed to fail occasionally. Therefore, **Partition Tolerance (P)** is a must. You are left choosing between:
+Let's explore what this means. Imagine a distributed database with a primary node in the US and a replica in Europe. A network cable across the Atlantic is severed. The two nodes can no longer communicate. 
 
-### 1. CP Databases (Consistency + Partition Tolerance)
-If a network break occurs, the database blocks write or read operations on isolated nodes to prevent split-brain errors (returning out-of-sync data).
-* *Examples:* MongoDB, Google Spanner, HBase.
+A user in Europe asks their local node for their profile data. The European node knows it is disconnected and hasn't received updates from the US in 10 minutes. What does it do?
 
-### 2. AP Databases (Availability + Partition Tolerance)
-If a network break occurs, all nodes continue accepting reads and writes, returning stale data if necessary, and sync changes later when the connection heals.
-* *Examples:* Cassandra, DynamoDB, CouchDB.
+### Option 1: Choose Consistency (CP Systems)
+The European node replies with an Error. It refuses to serve the data because it cannot mathematically guarantee it has the most recent version. 
+**Result:** The system is perfectly Consistent, but it is no longer Available to European users. 
 
----
+### Option 2: Choose Availability (AP Systems)
+The European node replies with whatever data it currently has in its local memory. 
+**Result:** The system remains highly Available, but it is no longer Consistent. The user might see a stale profile picture that was deleted in the US 5 minutes ago.
 
-## 💻 Code Examples: Simulating CP vs. AP Nodes
+## When to Choose Consistency (CP)
 
-Let's write a python/code script simulating how CP and AP nodes behave during a network split.
+You must prioritize Consistency when serving stale data would cause catastrophic financial or logical errors.
 
-### Multi-Language Execution
+- **Financial Transactions:** A bank account balance must be strictly consistent. If a system allows you to withdraw $100 from an ATM in New York and instantly withdraw the same $100 in London during a network partition, the bank loses money.
+- **Inventory Systems:** E-commerce platforms booking final seats on an airplane or selling out a limited sneaker drop. Overselling inventory due to stale replica reads destroys customer trust.
 
-##### Python
-\`\`\`python
-class DistributedNode:
-    def __init__(self, name, mode="AP"):
-        self.name = name
-        self.mode = mode # AP or CP
-        self.data = "Initial Value"
-        self.network_connected = True
+**Technology Choices for CP:** Traditional RDBMS (PostgreSQL, MySQL configured for synchronous replication), Google Spanner, or NoSQL databases configured for strict quorums (MongoDB, HBase). These systems will block writes or reject reads if they cannot establish consensus.
 
-    def query(self):
-        if not self.network_connected:
-            if self.mode == "CP":
-                # CP: Raise error because we can't guarantee consistency
-                raise ConnectionError("Node isolated. Blocking query to maintain consistency!")
-            else:
-                # AP: Return local stale data
-                return f"{self.data} (Warning: Stale AP mode)"
-        return self.data
+## When to Choose Availability (AP)
 
-node_cp = DistributedNode("Node-1", mode="CP")
-node_ap = DistributedNode("Node-2", mode="AP")
+The vast majority of consumer internet systems can tolerate slight inconsistencies and should prioritize Availability. 
 
-# Simulate network partition
-node_cp.network_connected = False
-node_ap.network_connected = False
+- **Social Media:** If you update your bio, it is perfectly acceptable if a user in another country sees the old bio for an extra 30 seconds. Showing a slightly stale bio is infinitely better than showing an ugly \`500 Internal Server Error\` page.
+- **Analytics & Metrics:** View counters on a viral video don't need to be perfectly consistent across the globe at every millisecond.
 
-print("AP Node Response:", node_ap.query())
-try:
-    node_cp.query()
-except ConnectionError as e:
-    print("CP Node Response:", e)
-\`\`\`
+**Technology Choices for AP:** Systems designed for Eventual Consistency. Apache Cassandra, Couchbase, or DynamoDB (in multi-region active-active mode). These systems will happily accept writes and serve stale reads during a partition, syncing up in the background once the network recovers.
 
-##### Java
-\`\`\`java
-public class CapDemo {
-    static class Node {
-        String data = "V1";
-        boolean modeCP = true;
-        boolean partition = false;
+## Nuance in the Real World
 
-        public String read() throws Exception {
-            if (partition && modeCP) {
-                throw new Exception("CP Mode: Blocked read to prevent stale data.");
-            }
-            return data + (partition ? " (AP Stale)" : "");
-        }
-    }
+Modern systems rarely make a blanket binary choice. They blend CP and AP depending on the specific microservice.
 
-    public static void main(String[] args) {
-        Node node = new Node();
-        node.partition = true; // Trigger partition
-        
-        // Test AP
-        node.modeCP = false;
-        try { System.out.println("AP: " + node.read()); } catch(Exception e){}
-        
-        // Test CP
-        node.modeCP = true;
-        try { System.out.println("CP: " + node.read()); } catch(Exception e){
-            System.out.println("CP caught: " + e.getMessage());
-        }
-    }
-}
-\`\`\`
+Take a ticketing app. 
+- **The Seat Checkout Flow:** Must be strictly **CP**. It requires distributed locks and strong consistency to prevent double-booking.
+- **The Event Discovery Feed:** Should be highly **AP**. Browsing upcoming concerts should be lightning fast and always available. If a concert sells out, it's okay if the feed shows it as "Available" for a few extra seconds before the user clicks it and hits the strictly consistent checkout flow.
 
-##### C++
-\`\`\`cpp
-#include <iostream>
-#include <stdexcept>
+## Conclusion
 
-class Node {
-public:
-    std::string data = "Version-1";
-    bool isCP = true;
-    bool isPartitioned = false;
+In an interview, do not overcomplicate the CAP theorem. Establish the trade-off immediately during requirements gathering. 
 
-    std::string readData() {
-        if (isPartitioned && isCP) {
-            throw std::runtime_error("CP: Isolated node query blocked.");
-        }
-        return data + (isPartitioned ? " (AP Stale)" : "");
-    }
-};
-
-int main() {
-    Node node;
-    node.isPartitioned = true;
-    
-    // Test AP
-    node.isCP = false;
-    std::cout << "AP Output: " << node.readData() << std::endl;
-    
-    // Test CP
-    node.isCP = true;
-    try {
-        node.readData();
-    } catch (const std::exception& e) {
-        std::cout << "CP Output: " << e.what() << std::endl;
-    }
-    return 0;
-}
-\`\`\`
-
-##### TypeScript
-\`\`\`typescript
-class CapNode {
-    public data = "V1";
-    public isCP = true;
-    public partitioned = false;
-
-    public query(): string {
-        if (this.partitioned && this.isCP) {
-            throw new Error("CP Blocked: Cannot guarantee consistency.");
-        }
-        return this.data + (this.partitioned ? " (AP Stale)" : "");
-    }
-}
-const cn = new CapNode();
-cn.partitioned = true;
-cn.isCP = false;
-console.log("TS AP:", cn.query());
-cn.isCP = true;
-try { cn.query(); } catch (e: any) { console.log("TS CP:", e.message); }
-\`\`\`
-
----
-
-## ⚠️ Common Mistakes
-
-### 1. Thinking CA Databases exist in the real world
-Claiming a distributed database is a **CA** (Consistent and Available) database. In a real-world wide area network (WAN), router connections fail. If a network partition occurs, a database **cannot** choose Consistency and Availability at the same time.
-
-### 2. Confusing ACID Consistency vs. CAP Consistency
-* **ACID Consistency:** Your database schema rules are valid (no foreign key violations).
-* **CAP Consistency:** Every single node in the cluster returns the exact same data value at the same time.
-
----
-
-## 🔍 Interview Corner
-
-### Q1: Can a database be CA (Consistent and Available)?
-No. In distributed database systems, network partitions (P) are inevitable. When a partition occurs, the system must decide whether to stop isolated nodes (sacrificing Availability) or accept writes on isolated nodes (sacrificing Consistency). Therefore, you must choose either **CP** or **AP**.
-
-### Q2: What is the PACELC theorem?
-**PACELC** is an extension of the CAP theorem. It states: **If** there is a **P**artition, how does the system choose between **A**vailability or **C**onsistency? **Else** (when the network is running normally), how does the system choose between **L**atency or **C**onsistency?
-
----
-
-## 📝 Summary
-
-* **CAP Theorem** dictates tradeoffs in distributed systems during network partitions.
-* **Consistency (C):** All nodes see the same data at the same time.
-* **Availability (A):** Every request receives a successful response.
-* **Partition Tolerance (P):** The system survives connection cuts.
+Simply state: *"Because this is a financial ledger, we must prioritize Consistency over Availability during a network partition, so I will design around a CP architecture using a strongly consistent relational database."* Or conversely, *"Since this is a social media feed, we will prioritize Availability. Stale reads are acceptable, so an AP system utilizing Eventual Consistency is the best approach for scale."*
 `;
