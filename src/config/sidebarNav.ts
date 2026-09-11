@@ -70,6 +70,7 @@ function buildGuideGroups() {
   const spaceCompCat = guidesData.find((c) => c.id === "space-complexity");
   const fundamentalsCat = guidesData.find((c) => c.id === "fundamentals");
   const databaseCat = guidesData.find((c) => c.id === "database");
+  const systemDesignCat = guidesData.find((c) => c.id === "system-design");
   const patternGuides = guidesData
     .filter((c) => (PATTERN_IDS as readonly string[]).includes(c.id))
     .flatMap((c) => c.guides);
@@ -111,6 +112,13 @@ function buildGuideGroups() {
       icon: Database,
       isSingleLink: false,
       guides: databaseCat?.guides ?? [],
+    },
+    {
+      id: "system-design",
+      title: "System Design",
+      icon: Layers,
+      isSingleLink: false,
+      guides: systemDesignCat?.guides ?? [],
     }
   ];
 }
