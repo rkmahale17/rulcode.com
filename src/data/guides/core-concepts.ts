@@ -48,7 +48,7 @@ When designing your schema, specify which fields will be indexed based on your a
 
 Caching is a universal strategy for mitigating database load and reducing response times. By storing frequently requested data in an in-memory data store (like Redis), you can bypass slow disk-based database queries.
 
-![Caching Architecture](/images/system-design/caching_architecture_1789108758480.jpg)
+![Caching Architecture](/images/system-design/caching_strategies.jpg)
 
 While a database query might take 30ms, retrieving the same data from a cache takes roughly 1ms. At a massive scale, this difference is transformative.
 
@@ -58,7 +58,7 @@ The standard approach is the cache-aside pattern: the application checks the cac
 
 When a dataset outgrows the storage or throughput capacity of a single database server, you must partition the data across multiple machines—a process known as sharding.
 
-![Sharding Architecture](/images/system-design/sharding_architecture_1789108774837.jpg)
+![Database Sharding](/images/system-design/database_sharding.jpg)
 
 Selecting the right shard key is crucial. The shard key determines which server holds a specific piece of data. If you shard a social network by \`user_id\`, all data belonging to a specific user resides on one server, making user-specific queries blazing fast. However, aggregating data across all users (like calculating global trending topics) becomes highly inefficient, as it requires querying every shard and merging the results.
 
@@ -66,11 +66,13 @@ Selecting the right shard key is crucial. The shard key determines which server 
 
 Traditional hashing for distributing data across servers (\`hash(key) % N\`) breaks down when you need to add or remove servers, as it requires reshuffling almost all the data. 
 
-![Consistent Hashing](/images/system-design/consistent_hashing_1789108788037.jpg)
+![Consistent Hashing](/images/system-design/consistent_hashing_ring.jpg)
 
 Consistent hashing solves this by mapping both the data keys and the servers onto a circular "ring." A key is assigned to the first server it encounters moving clockwise around the ring. This ingenious mathematical approach ensures that when a server is added or removed, only a small fraction of the data needs to be migrated, making elastic scaling manageable.
 
 ## CAP Theorem
+
+![CAP Theorem Triangle](/images/system-design/cap_theorem_triangle.jpg)
 
 The CAP theorem outlines the fundamental tradeoffs in distributed data systems. It states that a system can only guarantee two of three traits: Consistency (all clients see the same data simultaneously), Availability (every request receives a response, even if the data is stale), and Partition Tolerance (the system functions despite network failures between nodes).
 

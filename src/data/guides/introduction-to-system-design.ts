@@ -3,6 +3,8 @@ export const content = `
 
 Master system design quickly with essential concepts needed to excel in technical interviews, curated from the experiences of senior engineering leaders.
 
+![High Level Architecture](/images/system-design/high_level_architecture.jpg)
+
 After evaluating countless candidates at top tech companies, we've gathered the most critical knowledge you need to succeed in system design interviews. 
 
 This approach offers two main benefits:
