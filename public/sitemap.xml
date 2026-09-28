@@ -2,2023 +2,2095 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://rulcode.com/</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://rulcode.com/dsa/core</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://rulcode.com/dsa/blind-75</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://rulcode.com/dsa/rulcode-150</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://rulcode.com/dsa/visual-library</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://rulcode.com/dsa/pattern-guess</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://rulcode.com/dsa/patterns</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://rulcode.com/dsa/problems</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://rulcode.com/dsa/roadmap</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://rulcode.com/database/sql-basics</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://rulcode.com/complexity</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/merge-triplets-to-form-target-triplet</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/add-and-search-word</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/spiral-matrix</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/bellman-ford</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/gcd-euclidean</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/longest-palindromic-substring</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/daily-temperatures</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/remove-element</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/sieve-eratosthenes</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/rotate-image</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/find-the-duplicate-number</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/task-scheduler</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/sliding-window-maximum</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/xor-trick</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/last-stone-weight</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/nth-highest-salary</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/subsets-ii</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/sudoku-solver</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/maximum-product-subarray</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/redundant-connection</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/throttle</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/non-overlapping-intervals</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/reorder-list</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/k-closest-points-to-origin</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/palindrome-partitioning</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/matrix-path-dp</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/tarjans</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/promise-all</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/longest-increasing-subsequence</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/car-fleet</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/activity-selection</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/insert-interval</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/karatsuba</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/container-with-most-water</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/array-reduce</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/topological-sort</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/number-of-islands</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/manachers</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/letter-combinations-of-a-phone-number</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/binary-lifting</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/target-sum-ways</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/longest-repeating-character-replacement</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/merge-sorted-array</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/diameter-of-binary-tree</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/word-search-grid</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/lru-cache</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/two-sum-ii-input-array-is-sorted</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/segment-tree</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/trapping-rain-water</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/permutation-in-string</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/remove-duplicates-from-sorted-array</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/top-k-frequent-elements</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/4Sum</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/meeting-rooms</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/distinct-subsequences</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/modular-exponentiation</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/evaluate-reverse-polish-notation</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/customers-who-never-order</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/same-tree</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/department-highest-salary</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/dutch-national-flag</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/single-number</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/type-utilities</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/dfs-preorder</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/huffman-encoding</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/binary-tree-level-order-traversal</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/prefix-sum</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/floyd-warshall</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/majority-element</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/monotonic-stack</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/burst-balloons</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/department-top-three-salaries</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/3sum</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/coin-change</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/unique-paths</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/reverse-linked-list</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/invert-binary-tree</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/regular-expression-matching</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/word-search</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/happy-number</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/jump-game-ii</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/reverse-nodes-in-k-group</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/dijkstras</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/valid-parentheses</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/rising-temperature</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/majority-element-ii</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/serialize-tree</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/union-find</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/consecutive-numbers</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/jump-game</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/valid-anagram</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/decode-ways</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/powx-n</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/union-by-rank</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/group-anagrams</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/maximum-depth-of-binary-tree</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/min-stack</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/search-a-2d-matrix</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/merge-k-sorted-lists</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/boats-to-save-people</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/kadanes-algorithm</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rulcode.com/problem/type-utilities-ii</loc>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/maximum-subarray</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/koko-eating-bananas</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/find-the-highest-altitude</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/valid-palindrome</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/rotate-array</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/contains-duplicate</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/employees-earning-more-than-their-managers</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/construct-binary-tree-from-preorder-and-inorder-traversal</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/rabin-karp</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/merge-intervals</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/lcs</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/time-based-key-value-store</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/alien-dictionary</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/merge-k-lists</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/merge-sorted-lists</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/online-stock-span</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/counting-bits</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/kth-largest</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/middle-node</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/implement-trie</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/rotting-oranges</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/combination-sum-ii</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/count-bits</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/lis</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/dfs-inorder</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/sparse-table</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/n-queens</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/pacific-atlantic-water-flow</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/swim-in-rising-water</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/word-search-ii</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/combination-sum</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/duplicate-emails</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/graph-dfs</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/delete-duplicate-emails</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/subtree-of-another-tree</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/employee-bonus</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/reconstruct-itinerary</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/trie</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/graph-bfs</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/sliding-window</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/game-play-analysis-i</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/knapsack-01</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/bfs-level-order</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/game-play-analysis-iv</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/subarray-sum-equals-k</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/longest-substring-without-repeating-characters</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/prims</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/first-missing-positive</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/simplify-path</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/encode-and-decode-strings</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/longest-increasing-path-in-a-matrix</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/best-time-to-buy-and-sell-stock-ii</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/binary-tree-maximum-path-sum</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/add-two-numbers-ii</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/interleaving-string</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/plus-one</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/palindromic-substrings</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/range-sum-query-2d-immutable</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/a-star</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/best-time-to-buy-and-sell-stock-with-cooldown</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/multiply-strings</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/kruskals</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/max-area-of-island</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/managers-with-at-least-5-direct-reports</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/course-schedule-ii</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/coin-change-ii</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/interval-scheduling</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/minimum-window-substring</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/reverse-integer</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/hand-of-straights</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/lowest-common-ancestor-of-bst</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/reverse-linked-list-ii</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/add-two-numbers</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/partition-equal-subset-sum</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/course-schedule</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/median-of-two-sorted-arrays</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/sum-of-two-integers</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/generate-parentheses</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/validate-binary-search-tree</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/minimum-interval-to-include-each-query</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/design-twitter</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/merge-strings-alternately</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/meeting-rooms-ii</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/binary-search</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/detect-squares</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/clone-graph</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/lca</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/two-sum</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/graph-valid-tree</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/word-break</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/reverse-string</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/minimum-size-subarray-sum</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/find-median-from-data-stream</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/kth-smallest-element-in-a-bst</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/valid-palindrome-ii</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/best-time-to-buy-and-sell-stock</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/gas-station</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/fenwick-tree</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/detect-cycle-in-a-linked-list</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/cyclic-sort</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/fast-slow-pointers</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/recover-bst</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/subset-generation-bits</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/kth-largest-element-in-a-stream</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/find-minimum-in-rotated-sorted-array</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/two-pointers</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/edit-distance</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/longest-consecutive-sequence</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/binary-tree-right-side-view</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/combine-two-tables</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/partition-equal-subset</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/subsets</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/balanced-binary-tree</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/baseball-game</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/remove-nth-node-from-end-of-list</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/search-in-rotated-sorted-array</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/permutations</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/implement-stack-using-queues</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/number-of-1-bits</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/serialize-and-deserialize-binary-tree</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/dfs-postorder</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/reverse-bits</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/bst-insert</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/house-robber-ii</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/climbing-stairs</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/second-highest-salary</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/contains-duplicate-ii</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/kmp</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/implement-queue-using-stacks</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/partition-labels</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/word-break-problem</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/number-of-connected-components-in-an-undirected-graph</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/asteroid-collision</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/min-cost-climbing-stairs</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/product-of-array-except-self</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/house-robber</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/word-ladder</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/rank-scores</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/debounce</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/concatenation-of-array</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/missing-number</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/classnames</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/longest-common-subsequence</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/merge-two-sorted-lists</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/set-matrix-zeroes</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/surrounded-regions</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/combinations</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/count-good-nodes-in-binary-tree</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/problem/longest-common-prefix</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/time-complexity</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/space-complexity</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/fundamentals/core-data-structures</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/fundamentals/linked-list</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/fundamentals/trees</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/fundamentals/trie</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/fundamentals/graphs</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/arrays-hashing</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/two-pointers</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/frequency-counter</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/prefix-sum</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/sliding-window</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/stack</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/binary-search</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/cyclic-sort</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/merge-sort</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/recursion</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/backtracking</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/merge-intervals</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/dynamic-programming</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/fast-and-slow-pointers</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/greedy</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/bfs-dfs</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/what-is-database</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/types-of-databases</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/database-terminology</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/relational-databases-rdbms</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/tables-rows-columns</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/primary-keys-foreign-keys</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/constraints</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/normalization</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/denormalization</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/database-relationships</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/er-diagrams</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/indexes-fundamentals</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/sql-basics</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/select-filtering</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/sorting-limiting</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/aggregate-functions</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/groupby-having</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/joins</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/subqueries</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/ctes</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/case-expressions</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/null-handling</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/window-functions</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/ranking-functions</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/running-totals-moving-aggregates</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/set-operations</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/recursive-ctes</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/views</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/stored-procedures-functions</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/triggers</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/transactions-sql</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/sql-query-optimization</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/how-database-indexes-work</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/btree-bplus-tree-indexes</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/hash-indexes</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/clustered-non-clustered-indexes</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/query-execution-plans</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/database-storage-pages</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/buffer-pool-caching</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/concurrency-locking</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/mvcc</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/acid-properties</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/transaction-isolation-levels</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/deadlocks</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/database-replication</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/read-replicas</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/database-partitioning</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/database-sharding</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/cap-theorem</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/consistency-models</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/nosql-databases</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://rulcode.com/guides/patterns/database-scaling-high-availability</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rulcode.com/guides/patterns/introduction-to-system-design</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rulcode.com/guides/patterns/delivery-framework</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rulcode.com/guides/patterns/core-concepts</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rulcode.com/guides/patterns/key-technologies</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rulcode.com/guides/patterns/common-patterns</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rulcode.com/guides/patterns/networking</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rulcode.com/guides/patterns/api-design</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rulcode.com/guides/patterns/data-modeling</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rulcode.com/guides/patterns/caching</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rulcode.com/guides/patterns/sharding</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rulcode.com/guides/patterns/consistent-hashing</loc>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

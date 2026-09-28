@@ -456,6 +456,21 @@ export const CodeRunner = React.forwardRef<CodeRunnerRef, CodeRunnerProps>(({
     </div>
   );
 
+  const handleCopyToLeetcode = async () => {
+    try {
+      await navigator.clipboard.writeText(code);
+      toast.success("Copied to clipboard! Opening LeetCode...");
+      const leetcodeUrl = algorithmData?.metadata?.leetcode_url || algorithmData?.metadata?.leetcodeUrl;
+      if (leetcodeUrl) {
+        window.open(leetcodeUrl, "_blank", "noopener,noreferrer");
+      } else {
+        toast.error("No LeetCode URL found for this problem.");
+      }
+    } catch (err) {
+      toast.error("Failed to copy code.");
+    }
+  };
+
   const editorTabs = (
     <Tabs
       value={activeEditorTab}
@@ -484,6 +499,9 @@ export const CodeRunner = React.forwardRef<CodeRunnerRef, CodeRunnerProps>(({
           settings={settings}
           updateSetting={updateSetting}
           brainstormProps={brainstormProps}
+          onToggleQween={onOpenRulo}
+          isQweenOpen={false}
+          onCopyToLeetcode={(algorithmData?.metadata?.leetcode_url || algorithmData?.metadata?.leetcodeUrl) ? handleCopyToLeetcode : undefined}
         />
       )}
 

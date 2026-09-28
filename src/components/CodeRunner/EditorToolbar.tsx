@@ -38,6 +38,7 @@ interface EditorToolbarProps {
     };
     onToggleQween?: () => void;
     isQweenOpen?: boolean;
+    onCopyToLeetcode?: () => void;
 }
 
 export const EditorToolbar: React.FC<EditorToolbarProps> = ({
@@ -62,8 +63,15 @@ export const EditorToolbar: React.FC<EditorToolbarProps> = ({
     updateSetting,
     brainstormProps,
     onToggleQween,
-    isQweenOpen
+    isQweenOpen,
+    onCopyToLeetcode
 }) => {
+    const LeetcodeIcon = ({ className }: { className?: string }) => (
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className={className} fill="currentColor">
+            <path d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662l-4.332-4.363c-.467-.467-.701-1.115-.701-1.924s.234-1.457.701-1.924l2.92-2.938c.466-.467 1.111-.662 1.824-.662s1.357.195 1.824.662l2.919 2.938c.467.467.665 1.115.665 1.924 0 .808-.198 1.457-.665 1.924l-3.23 3.197h8.847c.563 0 1.018.457 1.018 1.02s-.455 1.02-1.018 1.02H16.102zm-3.661-4.706l-2.148-2.179c-.197-.198-.588-.198-.785 0l-2.919 2.937c-.198.199-.198.59 0 .788l4.332 4.363c.197.199.588.199.785 0l2.697-2.607c.198-.198.198-.589 0-.788l-1.962-1.962v-.001h-3.957c-.563 0-1.018-.456-1.018-1.019s.455-1.02 1.018-1.02h4.957v.488zM20.916 6.136c0-.809-.234-1.457-.701-1.924L17.296 1.274C16.829.807 16.184.612 15.472.612s-1.357.195-1.824.662L8.031 6.891c-.467.467-.701 1.115-.701 1.924s.234 1.457.701 1.924l4.332 4.363c.467.467 1.111.662 1.824.662s1.357-.195 1.824-.662l5.617-5.65c.467-.467.665-1.115.665-1.924v-.001h-.001z" />
+        </svg>
+    );
+
     return (
         <div className="flex items-center justify-between px-0 border-b bg-muted/40 h-9 shrink-0 gap-2">
             <div className="flex items-center gap-0 overflow-x-auto no-scrollbar mask-linear-fade shrink-0 h-full">
@@ -189,6 +197,24 @@ export const EditorToolbar: React.FC<EditorToolbarProps> = ({
                                 </Button>
                             </TooltipTrigger>
                             <TooltipContent side="bottom">Ask QWEEN (AI Assistant)</TooltipContent>
+                        </Tooltip>
+                    </TooltipProvider>
+                )}
+
+                {onCopyToLeetcode && activeEditorTab === 'current' && (
+                    <TooltipProvider>
+                        <Tooltip>
+                            <TooltipTrigger asChild>
+                                <Button
+                                    variant="ghost"
+                                    size="icon"
+                                    className="h-8 w-8 text-orange-500 hover:text-orange-600 hover:bg-orange-500/10"
+                                    onClick={onCopyToLeetcode}
+                                >
+                                    <LeetcodeIcon className="w-4 h-4" />
+                                </Button>
+                            </TooltipTrigger>
+                            <TooltipContent side="bottom">Paste to LeetCode</TooltipContent>
                         </Tooltip>
                     </TooltipProvider>
                 )}
