@@ -45,6 +45,8 @@ import {
   Plus,
   X,
   Bot,
+  Users,
+  MessageSquare,
 } from "lucide-react";
 import {
   DropdownMenu,
@@ -125,6 +127,20 @@ const BrainstormSection = dynamic(
   () =>
     import("../brainstorm/BrainstormSection").then(
       (mod) => mod.BrainstormSection,
+    ),
+  { ssr: false },
+);
+const CommunitySolutionsTab = dynamic(
+  () =>
+    import("../community/solutions/CommunitySolutionsTab").then(
+      (mod) => mod.CommunitySolutionsTab,
+    ),
+  { ssr: false },
+);
+const DiscussionTab = dynamic(
+  () =>
+    import("../community/discussions/DiscussionTab").then(
+      (mod) => mod.DiscussionTab,
     ),
   { ssr: false },
 );
@@ -399,6 +415,8 @@ export const ProblemDescriptionPanel = React.memo(
       { id: "description", label: "Description", icon: FileText },
       { id: "visualizations", label: "Visualizations", icon: Eye },
       { id: "solutions", label: "Solutions", icon: Flashlight },
+      { id: "community_solutions", label: "Community", icon: Users },
+      { id: "discussion", label: "Discussion", icon: MessageSquare },
       { id: "submissions", label: "Submissions", icon: History },
       { id: "thinkpad", label: "Thinkpad", icon: Book },
       { id: "editor", label: "Code", icon: Code2 },
@@ -409,7 +427,7 @@ export const ProblemDescriptionPanel = React.memo(
     const isFrontendProblem = algorithm?.problemType === 'frontend' || algorithm?.problem_type === 'frontend';
 
     const rawActiveTabsList = tabs || (panelId === "left"
-      ? ["description", "visualizations", "solutions", "submissions"]
+      ? ["description", "visualizations", "solutions", "community_solutions", "discussion", "submissions"]
       : ["editor", "thinkpad"]);
       
     const activeTabsList = isSqlProblem 
@@ -768,9 +786,9 @@ export const ProblemDescriptionPanel = React.memo(
           <div className="flex-1 overflow-hidden relative">
             <TabsContent
               value="description"
-              className="h-full m-0 data-[state=inactive]:hidden"
+              className="h-full m-0 data-[state=inactive]:hidden relative flex flex-col"
             >
-              <ScrollArea className="h-full">
+              <ScrollArea className="flex-1">
                 <div className="p-4 space-y-6">
                   {/* Mastery congratulations banner */}
                   {isCompleted && 
@@ -1785,9 +1803,115 @@ export const ProblemDescriptionPanel = React.memo(
                   )}
 
                   {/* Bottom Action Bar moved to parent container */}
-                  <div ref={endOfDescriptionRef} className="h-px w-full" />
+                  <div ref={endOfDescriptionRef} className="h-px w-full mb-12" />
                 </div>
               </ScrollArea>
+
+              {/* Bottom Action Bar - Ultra Slim Capsule */}
+              <div className="absolute bottom-[2px] left-0 right-0 z-10 flex justify-center pointer-events-none px-4">
+                <div className="pointer-events-auto max-w-full overflow-x-auto no-scrollbar flex items-center gap-1 p-0.5 bg-background/80 backdrop-blur-xl border border-border/50 shadow-lg rounded-full animate-in fade-in slide-in-from-bottom-4 duration-300">
+                  {/* Like Button */}
+                  {(!algorithm?.controls || algorithm.controls?.social?.voting !== false) && (
+                    <>
+                      <TooltipProvider>
+                        <Tooltip>
+                          <TooltipTrigger asChild>
+                            <Button
+                              variant={userVote === "like" ? "secondary" : "ghost"}
+                              size="sm"
+                              onClick={() => handleVote("like")}
+                              className={`gap-1.5 h-7 px-2.5 rounded-full transition-all ${userVote === "like" ? "bg-primary/10 text-primary hover:bg-primary/20" : "hover:bg-muted"}`}
+                            >
+                              <ThumbsUp className={`h-3 w-3 ${userVote === "like" ? "fill-current" : ""}`} />
+                              <span className="text-[11px] font-medium">{likes}</span>
+                            </Button>
+                          </TooltipTrigger>
+                          <TooltipContent side="top">Like</TooltipContent>
+                        </Tooltip>
+
+                        {/* Dislike Button */}
+                        <Tooltip>
+                          <TooltipTrigger asChild>
+                            <Button
+                              variant={userVote === "dislike" ? "secondary" : "ghost"}
+                              size="sm"
+                              onClick={() => handleVote("dislike")}
+                              className={`gap-1.5 h-7 px-2.5 rounded-full transition-all ${userVote === "dislike" ? "bg-destructive/10 text-destructive hover:bg-destructive/20" : "hover:bg-muted"}`}
+                            >
+                              <ThumbsDown className={`h-3 w-3 ${userVote === "dislike" ? "fill-current" : ""}`} />
+                              {dislikes > 0 && (
+                                <span className="text-[11px] font-medium">{dislikes}</span>
+                              )}
+                            </Button>
+                          </TooltipTrigger>
+                          <TooltipContent side="top">Dislike</TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
+                      <div className="w-px h-3 bg-border mx-0.5" />
+                    </>
+                  )}
+
+                  {/* Community Solutions Button */}
+                  <TooltipProvider>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <Button
+                          variant="ghost"
+                          size="sm"
+                          onClick={() => setActiveTab("community_solutions")}
+                          className="gap-1.5 h-7 px-2.5 rounded-full text-muted-foreground hover:text-foreground hover:bg-muted transition-all"
+                        >
+                          <Users className="h-3 w-3" />
+                          <span className="text-[11px] font-medium">Community</span>
+                        </Button>
+                      </TooltipTrigger>
+                      <TooltipContent side="top">Community Solutions</TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+
+                  {/* Discussion Button */}
+                  <TooltipProvider>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <Button
+                          variant="ghost"
+                          size="sm"
+                          onClick={() => setActiveTab("discussion")}
+                          className="gap-1.5 h-7 px-2.5 rounded-full text-muted-foreground hover:text-foreground hover:bg-muted transition-all"
+                        >
+                          <MessageSquare className="h-3 w-3" />
+                          <span className="text-[11px] font-medium">Discussion</span>
+                        </Button>
+                      </TooltipTrigger>
+                      <TooltipContent side="top">Discussion</TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+
+                  {(!algorithm?.controls || algorithm.controls?.social?.favorite !== false) && (
+                    <>
+                      <div className="w-px h-3 bg-border mx-0.5" />
+                      {/* Favorite Button */}
+                      <TooltipProvider>
+                        <Tooltip>
+                          <TooltipTrigger asChild>
+                            <Button
+                              variant="ghost"
+                              size="icon"
+                              onClick={toggleFavorite}
+                              className={`h-7 w-7 rounded-full transition-all ${isFavorite ? "text-yellow-500 hover:text-yellow-600 hover:bg-yellow-500/10" : "text-muted-foreground hover:text-foreground hover:bg-muted"}`}
+                            >
+                              <Star className={`h-3.5 w-3.5 ${isFavorite ? "fill-current" : ""}`} />
+                            </Button>
+                          </TooltipTrigger>
+                          <TooltipContent side="top">
+                            {isFavorite ? "Unfavorite" : "Favorite"}
+                          </TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
+                    </>
+                  )}
+                </div>
+              </div>
             </TabsContent>
 
             {activeTabsList.includes("editor") && (
@@ -1944,6 +2068,64 @@ export const ProblemDescriptionPanel = React.memo(
                 </>
               )}
             </TabsContent>
+
+            {/* Community Solutions Tab */}
+            <TabsContent
+              value="community_solutions"
+              className="h-full m-0 data-[state=inactive]:hidden"
+            >
+              <React.Suspense
+                fallback={
+                  <div className="h-full flex flex-col gap-3 p-4">
+                    {[...Array(3)].map((_, i) => (
+                      <div key={i} className="border border-border/40 rounded-xl p-4 space-y-3">
+                        <div className="flex gap-3">
+                          <div className="h-8 w-8 rounded-full bg-muted animate-pulse shrink-0" />
+                          <div className="space-y-2 flex-1">
+                            <div className="h-3 w-28 bg-muted animate-pulse rounded" />
+                            <div className="h-3 w-48 bg-muted animate-pulse rounded" />
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                }
+              >
+                <CommunitySolutionsTab
+                  algorithmId={algorithm?.id || algorithm?.slug || ''}
+                  user={user}
+                />
+              </React.Suspense>
+            </TabsContent>
+
+            {/* Discussion Tab */}
+            <TabsContent
+              value="discussion"
+              className="h-full m-0 data-[state=inactive]:hidden"
+            >
+              <React.Suspense
+                fallback={
+                  <div className="h-full flex flex-col gap-4 p-4">
+                    {[...Array(3)].map((_, i) => (
+                      <div key={i} className="flex gap-2.5">
+                        <div className="h-7 w-7 rounded-full bg-muted animate-pulse shrink-0" />
+                        <div className="space-y-2 flex-1">
+                          <div className="h-3 w-24 bg-muted animate-pulse rounded" />
+                          <div className="h-3 w-full bg-muted animate-pulse rounded" />
+                          <div className="h-3 w-3/4 bg-muted animate-pulse rounded" />
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                }
+              >
+                <DiscussionTab
+                  algorithmId={algorithm?.id || algorithm?.slug || ''}
+                  user={user}
+                />
+              </React.Suspense>
+            </TabsContent>
+
             <TabsContent
               value="submissions"
               className="h-full m-0 data-[state=inactive]:hidden"
@@ -2105,95 +2287,7 @@ export const ProblemDescriptionPanel = React.memo(
                />
             </TabsContent>
 
-            {/* Bottom Action Bar - Ultra Slim Capsule (Visible across all tabs) */}
-            {false && activeTab !== "thinkpad" && activeTab !== "editor" && (
-              <div className="absolute bottom-[2px] left-0 right-0 z-10 flex justify-center pointer-events-none px-4">
-              <div className="pointer-events-auto max-w-full overflow-x-auto no-scrollbar flex items-center gap-1 p-0.5 bg-background/60 backdrop-blur-xl border border-border/50 shadow-lg rounded-full animate-in fade-in slide-in-from-bottom-4 duration-300">
-                {/* Like Button */}
-                {(!algorithm?.controls ||
-                  algorithm.controls?.social?.voting !== false) && (
-                  <>
-                    <TooltipProvider>
-                      <Tooltip>
-                        <TooltipTrigger asChild>
-                          <Button
-                            variant={
-                              userVote === "like" ? "secondary" : "ghost"
-                            }
-                            size="sm"
-                            onClick={() => handleVote("like")}
-                            className={`gap-1.5 h-7 px-2.5 rounded-full transition-all ${userVote === "like" ? "bg-primary/10 text-primary hover:bg-primary/20" : "hover:bg-muted"}`}
-                          >
-                            <ThumbsUp
-                              className={`h-3 w-3 ${userVote === "like" ? "fill-current" : ""}`}
-                            />
-                            <span className="text-[11px] font-medium">
-                              {likes}
-                            </span>
-                          </Button>
-                        </TooltipTrigger>
-                        <TooltipContent side="top">Like</TooltipContent>
-                      </Tooltip>
-
-                      {/* Dislike Button */}
-                      <Tooltip>
-                        <TooltipTrigger asChild>
-                          <Button
-                            variant={
-                              userVote === "dislike" ? "secondary" : "ghost"
-                            }
-                            size="sm"
-                            onClick={() => handleVote("dislike")}
-                            className={`gap-1.5 h-7 px-2.5 rounded-full transition-all ${userVote === "dislike" ? "bg-destructive/10 text-destructive hover:bg-destructive/20" : "hover:bg-muted"}`}
-                          >
-                            <ThumbsDown
-                              className={`h-3 w-3 ${userVote === "dislike" ? "fill-current" : ""}`}
-                            />
-                            {dislikes > 0 && (
-                              <span className="text-[11px] font-medium">
-                                {dislikes}
-                              </span>
-                            )}
-                          </Button>
-                        </TooltipTrigger>
-                        <TooltipContent side="top">Dislike</TooltipContent>
-                      </Tooltip>
-                    </TooltipProvider>
-                  </>
-                )}
-
-                {(!algorithm?.controls ||
-                  (algorithm.controls?.social?.voting !== false &&
-                    algorithm.controls?.social?.favorite !== false)) && (
-                  <div className="w-px h-3 bg-border mx-0.5" />
-                )}
-
-                {/* Favorite Button */}
-                {(!algorithm?.controls ||
-                  algorithm.controls?.social?.favorite !== false) && (
-                  <TooltipProvider>
-                    <Tooltip>
-                      <TooltipTrigger asChild>
-                        <Button
-                          variant="ghost"
-                          size="icon"
-                          onClick={toggleFavorite}
-                          className={`h-7 w-7 rounded-full transition-all ${isFavorite ? "text-yellow-500 hover:text-yellow-600 hover:bg-yellow-500/10" : "text-muted-foreground hover:text-foreground hover:bg-muted"}`}
-                        >
-                          <Star
-                            className={`h-3.5 w-3.5 ${isFavorite ? "fill-current" : ""}`}
-                          />
-                        </Button>
-                      </TooltipTrigger>
-                      <TooltipContent side="top">
-                        {isFavorite ? "Unfavorite" : "Favorite"}
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                )}
-              </div>
-            </div>
-            )}
+            {/* Bottom Action Bar - Removed from here, moved into the description tab */}
           </div>
         </Tabs>
 

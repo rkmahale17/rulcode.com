@@ -14,6 +14,7 @@ interface MetadataData {
   spaceComplexity: string;
   companyTags: string[];
   visualizationUrl: string;
+  leetcodeUrl?: string;
   likes?: number;
   dislikes?: number;
   unordered?: boolean;
@@ -262,6 +263,27 @@ export function MetadataEditor({ data, onChange }: MetadataEditorProps) {
             />
             <p className="text-xs text-muted-foreground">
               Link to an external visualization or demo
+            </p>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* LeetCode URL */}
+      <Card>
+        <CardHeader>
+          <CardTitle>LeetCode Integration</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="space-y-2">
+            <Label>LeetCode Problem URL</Label>
+            <Input
+              value={data.leetcodeUrl || ""}
+              onChange={(e) => updateField("leetcodeUrl", e.target.value)}
+              placeholder="https://leetcode.com/problems/..."
+              type="url"
+            />
+            <p className="text-xs text-muted-foreground">
+              Link to the corresponding LeetCode problem.
             </p>
           </div>
         </CardContent>
