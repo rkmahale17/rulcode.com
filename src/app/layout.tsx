@@ -81,6 +81,24 @@ export default function RootLayout({
             </Script>
           )}
 
+          {/* Google tag (gtag.js) event - delayed navigation helper */}
+          <Script id="google-ads-helper" strategy="lazyOnload">
+            {`
+              function gtagSendEvent(url) {
+                var callback = function () {
+                  if (typeof url === 'string') {
+                    window.location = url;
+                  }
+                };
+                gtag('event', 'conversion_event_page_view', {
+                  'event_callback': callback,
+                  'event_timeout': 2000,
+                });
+                return false;
+              }
+            `}
+          </Script>
+
           <Suspense fallback={null}>
             <AppSidebar />
           </Suspense>

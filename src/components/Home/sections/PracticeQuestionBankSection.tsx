@@ -86,7 +86,12 @@ export function PracticeQuestionBankSection() {
     return result.slice(0, 4); // show max 4 for topics
   }, [data, activeTab, activeItem]);
 
-  const totalQuestions = data?.algorithms?.length || 200;
+  const [isMounted, setIsMounted] = useState(false);
+  React.useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  const totalQuestions = isMounted ? (data?.algorithms?.length || 200) : 200;
 
   return (
     <section className="py-20 lg:py-28 bg-white dark:bg-[#111111] text-zinc-900 dark:text-white relative overflow-hidden">

@@ -46,7 +46,16 @@ export const PromoBanner: React.FC = () => {
 
   return (
     <div className="bg-[#eaf761] text-black px-4 py-2 flex items-center justify-center relative w-full text-sm font-medium z-50">
-      <Link href="/pricing" className="flex flex-wrap items-center justify-center gap-1.5 md:gap-2 hover:opacity-80 transition-opacity">
+      <Link 
+        href="/pricing" 
+        className="flex flex-wrap items-center justify-center gap-1.5 md:gap-2 hover:opacity-80 transition-opacity"
+        onClick={(e) => {
+          if (typeof window !== 'undefined' && (window as any).gtagSendEvent) {
+            e.preventDefault();
+            (window as any).gtagSendEvent('/pricing');
+          }
+        }}
+      >
         <span className="font-semibold">Flash Sale</span>
         <span className="hidden md:inline">-</span>
         <span>10% off everything with code <span className="font-bold">FLASH10</span>.</span>

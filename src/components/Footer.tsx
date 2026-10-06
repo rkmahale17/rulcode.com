@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { Github, Heart, ExternalLink } from "lucide-react";
 import { Button } from "./ui/button";
@@ -40,7 +42,16 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/dsa/core" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <Link 
+                  href="/dsa/core" 
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  onClick={(e) => {
+                    if (typeof window !== 'undefined' && (window as any).gtagSendEvent) {
+                      e.preventDefault();
+                      (window as any).gtagSendEvent('/dsa/core');
+                    }
+                  }}
+                >
                   Roadmaps
                 </Link>
               </li>
@@ -60,7 +71,16 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/guides" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <Link 
+                  href="/guides" 
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  onClick={(e) => {
+                    if (typeof window !== 'undefined' && (window as any).gtagSendEvent) {
+                      e.preventDefault();
+                      (window as any).gtagSendEvent('/guides');
+                    }
+                  }}
+                >
                   Guides
                 </Link>
               </li>

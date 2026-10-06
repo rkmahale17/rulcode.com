@@ -305,7 +305,13 @@ const Navbar = ({
                 <Link
                   href="/guides/time-complexity"
                   className="flex items-center gap-1.5 px-3.5 py-2 text-base font-medium rounded-xl hover:bg-muted/80 hover:text-primary active:scale-[0.97] transition-all shutter-click"
-                  onClick={closeMenus}
+                  onClick={(e) => {
+                    closeMenus();
+                    if (typeof window !== 'undefined' && (window as any).gtagSendEvent) {
+                      e.preventDefault();
+                      (window as any).gtagSendEvent('/guides/time-complexity');
+                    }
+                  }}
                 >
                   Learn
                 </Link>
@@ -426,7 +432,11 @@ const Navbar = ({
                               <Link
                                 href="/dsa/core"
                                 className="text-[13px] font-semibold text-primary hover:underline flex items-center gap-1 group shutter-click"
-                                onClick={() => {
+                                onClick={(e) => {
+                                  if (typeof window !== 'undefined' && (window as any).gtagSendEvent) {
+                                    e.preventDefault();
+                                    (window as any).gtagSendEvent('/dsa/core');
+                                  }
                                   closeMenus();
                                   trackEvent(posthog, "home_cta_clicked", {
                                     cta_label: "View all patterns",
@@ -691,7 +701,11 @@ const Navbar = ({
                             <Link
                               href="/dsa/core"
                               className="group flex items-start gap-5 relative shutter-click"
-                              onClick={() => {
+                              onClick={(e) => {
+                                if (typeof window !== 'undefined' && (window as any).gtagSendEvent) {
+                                  e.preventDefault();
+                                  (window as any).gtagSendEvent('/dsa/core');
+                                }
                                 closeMenus();
                                 trackEvent(posthog, "home_cta_clicked", {
                                   cta_label: "Core problems",
@@ -1198,12 +1212,16 @@ const Navbar = ({
                   <Link
                     href="/pricing"
                     className="text-sm font-normal hover:text-primary transition-colors hidden md:block mr-2"
-                    onClick={() =>
+                    onClick={(e) => {
+                      if (typeof window !== 'undefined' && (window as any).gtagSendEvent) {
+                        e.preventDefault();
+                        (window as any).gtagSendEvent('/pricing');
+                      }
                       trackEvent(posthog, "navbar_cta_clicked", {
                         cta_label: "Pricing",
                         destination: "/pricing",
-                      })
-                    }
+                      });
+                    }}
                   >
                     Pricing
                   </Link>
