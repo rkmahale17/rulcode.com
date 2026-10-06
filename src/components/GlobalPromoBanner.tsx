@@ -190,6 +190,12 @@ export const GlobalPromoBanner: React.FC<{ announcement?: BannerAnnouncement }> 
       <Link
         href="/pricing"
         className="flex flex-wrap items-center justify-center gap-1.5 md:gap-2 hover:opacity-80 transition-opacity"
+        onClick={(e) => {
+          if (typeof window !== 'undefined' && (window as any).gtagSendEvent) {
+            e.preventDefault();
+            (window as any).gtagSendEvent('/pricing');
+          }
+        }}
       >
         <span
           className="font-semibold whitespace-nowrap"
