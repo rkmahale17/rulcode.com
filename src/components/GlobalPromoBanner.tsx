@@ -134,23 +134,36 @@ export const GlobalPromoBanner: React.FC<{ announcement?: BannerAnnouncement }> 
 
     fetchBanner();
 
-    const channel = supabase
-      .channel("schema-db-changes-banner")
-      .on(
-        "postgres_changes",
-        {
-          event: "*",
-          schema: "public",
-          table: "announcements",
-        },
-        () => {
-          fetchBanner();
-        }
-      )
-      .subscribe();
+    let channel: any = null;
+    const subscribeRealtime = () => {
+      channel = supabase
+        .channel("schema-db-changes-banner")
+        .on(
+          "postgres_changes",
+          {
+            event: "*",
+            schema: "public",
+            table: "announcements",
+          },
+          () => {
+            fetchBanner();
+          }
+        )
+        .subscribe();
+    };
+
+    if (typeof window !== "undefined") {
+      if ("requestIdleCallback" in window) {
+        (window as any).requestIdleCallback(subscribeRealtime, { timeout: 3000 });
+      } else {
+        setTimeout(subscribeRealtime, 2000);
+      }
+    }
 
     return () => {
-      supabase.removeChannel(channel);
+      if (channel) {
+        supabase.removeChannel(channel);
+      }
     };
   }, [announcement]);
 
