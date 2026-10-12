@@ -4,67 +4,80 @@ import { Metadata } from "next";
 import Script from "next/script";
 import dynamic from "next/dynamic";
 
-// ── Below-the-fold sections (lazy loaded to reduce initial bundle) ───────────
+import {
+  InteractiveSandboxSkeleton,
+  ScratchpadSkeleton,
+  PracticeQuestionBankSkeleton,
+  PlatformPreviewSkeleton,
+  TestimonialsSkeleton,
+  FeedbackSkeleton,
+} from "@/components/Home/sections/HomeSectionSkeletons";
+
+// ── Below-the-fold secondary sections (lazy loaded with individual skeletons to prioritize critical content FCP) ───
 const DashboardWidgets = dynamic(() =>
   import("@/components/listing/DashboardWidgets").then((m) => ({
     default: m.DashboardWidgets,
-  })),
-);
-const InteractiveSandboxTeaser = dynamic(() =>
-  import("@/components/Home/sections/InteractiveSandboxTeaser").then((m) => ({
-    default: m.InteractiveSandboxTeaser,
-  })),
-);
-const GuidedSection = dynamic(() =>
-  import("@/components/Home/sections/GuidedSection").then((m) => ({
-    default: m.GuidedSection,
-  })),
-);
-const ProblemsSection = dynamic(() =>
-  import("@/components/Home/sections/ProblemsSection").then((m) => ({
-    default: m.ProblemsSection,
-  })),
-);
-const HomeClient = dynamic(() => import("./HomeClient"));
-
-// ── Below-the-fold sections (lazy loaded to reduce initial bundle) ───────────
-const ScratchpadSection = dynamic(() =>
-  import("@/components/Home/sections/ScratchpadSection").then((m) => ({
-    default: m.ScratchpadSection,
-  })),
-);
-const FeedbackSection = dynamic(() =>
-  import("@/components/Home/sections/FeedbackSection").then((m) => ({
-    default: m.FeedbackSection,
-  })),
-);
-const TestimonialsSection = dynamic(() =>
-  import("@/components/Home/sections/TestimonialsSection").then((m) => ({
-    default: m.TestimonialsSection,
-  })),
-);
-const CommunitySection = dynamic(() =>
-  import("@/components/Home/sections/CommunitySection").then((m) => ({
-    default: m.CommunitySection,
-  })),
+  }))
 );
 
-const BottomCTA = dynamic(() =>
-  import("@/components/Home/sections/BottomCTA").then((m) => ({
-    default: m.BottomCTA,
-  })),
+const InteractiveSandboxTeaser = dynamic(
+  () =>
+    import("@/components/Home/sections/InteractiveSandboxTeaser").then((m) => ({
+      default: m.InteractiveSandboxTeaser,
+    })),
+  {
+    loading: () => <InteractiveSandboxSkeleton />,
+  }
 );
-const FAQ = dynamic(() =>
-  import("@/components/FAQ").then((m) => ({ default: m.FAQ })),
+
+const ScratchpadSection = dynamic(
+  () =>
+    import("@/components/Home/sections/ScratchpadSection").then((m) => ({
+      default: m.ScratchpadSection,
+    })),
+  {
+    loading: () => <ScratchpadSkeleton />,
+  }
 );
-const Footer = dynamic(() =>
-  import("@/components/Footer").then((m) => ({ default: m.Footer })),
+
+const PracticeQuestionBankSection = dynamic(
+  () =>
+    import("@/components/Home/sections/PracticeQuestionBankSection").then((m) => ({
+      default: m.PracticeQuestionBankSection,
+    })),
+  {
+    loading: () => <PracticeQuestionBankSkeleton />,
+  }
 );
-const PracticeQuestionBankSection = dynamic(() =>
-  import("@/components/Home/sections/PracticeQuestionBankSection").then((m) => ({
-    default: m.PracticeQuestionBankSection,
-  })),
+
+const HomeClient = dynamic(() => import("./HomeClient"), {
+  loading: () => <PlatformPreviewSkeleton />,
+});
+
+const TestimonialsSection = dynamic(
+  () =>
+    import("@/components/Home/sections/TestimonialsSection").then((m) => ({
+      default: m.TestimonialsSection,
+    })),
+  {
+    loading: () => <TestimonialsSkeleton />,
+  }
 );
+
+const FeedbackSection = dynamic(
+  () =>
+    import("@/components/Home/sections/FeedbackSection").then((m) => ({
+      default: m.FeedbackSection,
+    })),
+  {
+    loading: () => <FeedbackSkeleton />,
+  }
+);
+
+import { BottomCTA } from "@/components/Home/sections/BottomCTA";
+import { CommunitySection } from "@/components/Home/sections/CommunitySection";
+import { FAQ } from "@/components/FAQ";
+import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Rulcode – Learn Data Structures & Algorithms with Interactive Visualizations",
@@ -216,6 +229,7 @@ export default function Page() {
       />
       <div className="min-h-screen bg-white dark:bg-black text-[#1A1A1A] dark:text-white overflow-x-hidden relative w-full">
         <HeroSection />
+        <TestimonialsSection />
         <DashboardWidgets />
 
         <div id="visualize">
@@ -224,22 +238,10 @@ export default function Page() {
         <div id="thinkpad">
           <ScratchpadSection />
         </div>
-        {/* Temporarily hidden */}
-        {false && (
-          <>
-            <div id="guides">
-              <GuidedSection />
-            </div>
-            <div id="problems">
-              <ProblemsSection />
-            </div>
-          </>
-        )}
         <PracticeQuestionBankSection />
         <div id="playground">
           <HomeClient type="platform-preview" />
         </div>
-        <TestimonialsSection />
         <FeedbackSection />
         <CommunitySection />
         <BottomCTA />

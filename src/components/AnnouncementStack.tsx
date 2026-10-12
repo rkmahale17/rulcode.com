@@ -41,24 +41,37 @@ export const AnnouncementStack: React.FC = () => {
 
     fetchAnnouncements();
 
-    // Optionally set up realtime listener
-    const channel = supabase
-      .channel("schema-db-changes")
-      .on(
-        "postgres_changes",
-        {
-          event: "*",
-          schema: "public",
-          table: "announcements",
-        },
-        () => {
-          fetchAnnouncements();
-        }
-      )
-      .subscribe();
+    // Defer realtime listener to browser idle time to avoid blocking page load
+    let channel: any = null;
+    const subscribeRealtime = () => {
+      channel = supabase
+        .channel("schema-db-changes")
+        .on(
+          "postgres_changes",
+          {
+            event: "*",
+            schema: "public",
+            table: "announcements",
+          },
+          () => {
+            fetchAnnouncements();
+          }
+        )
+        .subscribe();
+    };
+
+    if (typeof window !== "undefined") {
+      if ("requestIdleCallback" in window) {
+        (window as any).requestIdleCallback(subscribeRealtime, { timeout: 3000 });
+      } else {
+        setTimeout(subscribeRealtime, 2000);
+      }
+    }
 
     return () => {
-      supabase.removeChannel(channel);
+      if (channel) {
+        supabase.removeChannel(channel);
+      }
     };
   }, []);
 

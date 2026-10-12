@@ -12,6 +12,7 @@ const caveat = Caveat({
     subsets: ["latin"],
     weight: ["400", "700"],
     variable: "--font-caveat",
+    display: "swap",
 });
 
 const getWobblyRect = (x: number, y: number, w: number, h: number, seed = 0) => {

@@ -7,7 +7,22 @@ import { usePostHog } from "@posthog/react";
 import { trackEvent } from "@/lib/analytics";
 import { ArrowRight, Check, Eye, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { MaximumSubarrayVisualization } from "@/components/visualizations/algorithms/MaximumSubarrayVisualization";
+import dynamic from "next/dynamic";
+
+const MaximumSubarrayVisualization = dynamic(
+  () =>
+    import(
+      "@/components/visualizations/algorithms/MaximumSubarrayVisualization"
+    ).then((m) => m.MaximumSubarrayVisualization),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="w-full h-[360px] flex items-center justify-center text-sm text-zinc-400 animate-pulse">
+        Loading visualization...
+      </div>
+    ),
+  }
+);
 
 export function InteractiveSandboxTeaser() {
   const posthog = usePostHog();

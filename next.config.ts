@@ -13,6 +13,7 @@ const nextConfig: NextConfig = {
   },
   experimental: {
     optimizePackageImports: [
+      'date-fns',
       'lucide-react',
       'recharts',
       'framer-motion',
