@@ -100,8 +100,8 @@ const ProblemsClient = ({
   const filteredAlgorithms = useMemo(() => {
     let result = allAlgorithms;
     if (listMode === "core") result = coreAlgorithms;
-    else if (listMode === "blind") result = blindAlgorithms;
-    else if (listMode === "blind150") result = blind150Algorithms;
+    else if (listMode === "blind" || listMode === ListType.Blind75) result = blindAlgorithms;
+    else if (listMode === "blind150" || listMode === "rulcode150") result = blind150Algorithms;
 
     if (companyFilter) {
       result = result.filter((algo) => {
@@ -136,8 +136,8 @@ const ProblemsClient = ({
     if (normalizedTopic) return `${normalizedTopic} Problems`;
     if (companyFilter) return `${companyFilter} Interview Questions`;
     if (listMode === "core") return "Core Patterns";
-    if (listMode === "blind") return "Blind 75";
-    if (listMode === "blind150") return "Rulcode 150";
+    if (listMode === "blind" || listMode === ListType.Blind75) return "Blind 75";
+    if (listMode === "blind150" || listMode === "rulcode150") return "Rulcode 150";
     return "All Practice Questions";
   };
 
@@ -149,9 +149,9 @@ const ProblemsClient = ({
       return `Prepare for your ${companyFilter} interview with these frequency-based problems. Practice the patterns and algorithms commonly asked in their technical assessments.`;
     if (listMode === "core")
       return "Master the 20% of patterns that solve 80% of interview questions. Focus on high-impact techniques like Sliding Window, Two Pointers, and Backtracking to develop a deep, pattern-based intuition for problem-solving.";
-    if (listMode === "blind")
+    if (listMode === "blind" || listMode === ListType.Blind75)
       return "The definitive list of 75 essential problems designed to maximize your preparation in minimal time. Focus on the most frequent FAANG interview questions to ensure you're ready for the highest-level technical assessments.";
-    if (listMode === "blind150")
+    if (listMode === "blind150" || listMode === "rulcode150")
       return "A comprehensive collection of 150 critical problems combining Blind 75 and additional core patterns, providing thorough coverage across all standard algorithm topics.";
     return "Explore our comprehensive collection of 200+ problems covering all major data structures and algorithms. Master everything from basic arrays to advanced dynamic programming through hands-on practice and step-by-step visualizations.";
   };
@@ -161,8 +161,8 @@ const ProblemsClient = ({
     if (normalizedTopic) return `${normalizedTopic} Progress`;
     if (companyFilter) return `${companyFilter} Prep Progress`;
     if (listMode === "core") return "Pattern Progress";
-    if (listMode === "blind") return "Blind 75 Progress";
-    if (listMode === "blind150") return "Rulcode 150 Progress";
+    if (listMode === "blind" || listMode === ListType.Blind75) return "Blind 75 Progress";
+    if (listMode === "blind150" || listMode === "rulcode150") return "Rulcode 150 Progress";
     return "Overall Progress";
   };
 
@@ -192,15 +192,17 @@ const ProblemsClient = ({
     return Layers;
   }, [manualIcon, companyFilter, normalizedTopic]);
 
+  const normalizedListMode = listMode === "blind" ? ListType.Blind75 : listMode === "rulcode150" ? ListType.Blind150 : listMode;
+
   return (
     <ProblemsList
       algorithms={filteredAlgorithms}
       title={getTitle()}
       description={getDescription()}
-      listType={listMode}
+      listType={normalizedListMode}
       progressTitle={getProgressTitle()}
       isLoading={isLoading}
-      showRecommendation={listMode === "all" && !topicFilter && !companyFilter}
+      showRecommendation={normalizedListMode === "all" && !topicFilter && !companyFilter}
       icon={resolvedIcon}
       initialSelectedTopics={initialTopics}
       initialSelectedCompanies={initialCompanies}
@@ -210,14 +212,14 @@ const ProblemsClient = ({
         !manualListType ? (
           <div className="flex flex-wrap items-center gap-3 mb-8">
             <Button
-              variant={listMode === "all" ? "default" : "outline"}
+              variant={normalizedListMode === "all" ? "default" : "outline"}
               onClick={() => updateParams({ mode: "all" })}
               className="rounded-xl h-10 font-medium transition-all"
             >
               All Questions
             </Button>
             <Button
-              variant={listMode === "core" ? "default" : "outline"}
+              variant={normalizedListMode === "core" ? "default" : "outline"}
               onClick={() => updateParams({ mode: "core" })}
               className="rounded-xl h-10 font-medium transition-all w-fit px-5"
             >
@@ -225,8 +227,8 @@ const ProblemsClient = ({
               Core
             </Button>
             <Button
-              variant={listMode === "blind" ? "default" : "outline"}
-              onClick={() => updateParams({ mode: "blind" })}
+              variant={normalizedListMode === ListType.Blind75 ? "default" : "outline"}
+              onClick={() => updateParams({ mode: ListType.Blind75 })}
               className="rounded-xl h-10 font-medium transition-all w-fit px-5"
             >
               <Brain className="w-4 h-4" />

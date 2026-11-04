@@ -1,6 +1,37 @@
 import React from "react";
 import { Skeleton } from "@/components/ui/skeleton";
 
+export function TopicTreeSkeleton() {
+  return (
+    <section className="pt-8 pb-20 lg:pb-28 bg-white dark:bg-black text-zinc-900 dark:text-white relative overflow-hidden">
+      <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 relative z-10">
+        <div className="flex flex-col items-center mb-10 text-center">
+          <Skeleton className="h-8 w-56 rounded-lg mb-3" />
+          <Skeleton className="h-4 w-80 max-w-full rounded-md" />
+        </div>
+        <div className="w-full h-[660px] rounded-2xl border border-zinc-200/80 dark:border-zinc-800/80 bg-zinc-50/50 dark:bg-zinc-900/20 p-6 flex flex-col items-center justify-between">
+          <Skeleton className="h-16 w-48 rounded-xl" />
+          <div className="flex gap-6 justify-center w-full">
+            <Skeleton className="h-16 w-48 rounded-xl" />
+            <Skeleton className="h-16 w-48 rounded-xl hidden sm:block" />
+          </div>
+          <div className="flex gap-6 justify-center w-full">
+            <Skeleton className="h-16 w-48 rounded-xl" />
+            <Skeleton className="h-16 w-48 rounded-xl hidden sm:block" />
+            <Skeleton className="h-16 w-48 rounded-xl hidden md:block" />
+          </div>
+          <Skeleton className="h-16 w-48 rounded-xl" />
+          <div className="flex gap-6 justify-center w-full">
+            <Skeleton className="h-16 w-48 rounded-xl" />
+            <Skeleton className="h-16 w-48 rounded-xl hidden sm:block" />
+            <Skeleton className="h-16 w-48 rounded-xl hidden md:block" />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export function InteractiveSandboxSkeleton() {
   return (
     <section className="pt-16 lg:pt-20 pb-20 lg:pb-28 bg-[#FAFAFA] dark:bg-[#050505] text-zinc-900 dark:text-white relative overflow-hidden">

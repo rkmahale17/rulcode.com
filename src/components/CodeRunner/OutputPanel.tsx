@@ -395,63 +395,63 @@ export const OutputPanel = React.memo(({
               onValueChange={setActiveTestCaseTab}
               className="flex-1 flex flex-col min-h-0"
             >
-              <div className="flex items-start justify-between bg-background/50 shrink-0 py-1.5 px-2 min-h-[36px]">
-                {/* Scrollable Tabs List */}
-                <ScrollArea className="flex-1 w-full whitespace-nowrap">
-                  <div className="flex items-center w-max p-1">
-                    <TabsList className="h-9 bg-transparent p-0 flex-nowrap justify-start gap-1 border-none shadow-none">
-                      {allTestCases.filter(tc => !tc.isSubmission).map((tc, index) => (
-                        <TabsTrigger
-                          key={tc.id}
-                          value={`case-${tc.id}`}
-                          className="text-xs px-2.5 h-7 rounded-full whitespace-nowrap bg-muted/30 border border-black/20 dark:border-white/30 text-black/80 dark:text-white/80 hover:text-black dark:hover:text-white data-[state=active]:bg-primary/15 data-[state=active]:border-primary/20 data-[state=active]:shadow-none data-[state=active]:text-black dark:data-[state=active]:text-white relative group shrink-0 transition-all font-medium"
-                        >
-                          {tc.isCustom ? `Case ${index + 1}` : `Case ${index + 1}`}
-                          {/* Delete button for all cases */}
-                          <div
-                            className="ml-2 -mr-1.5 hover:bg-primary/20 rounded-full p-1 cursor-pointer opacity-60 hover:opacity-100 transition-colors"
-                            onClick={(e) => {
-                              e.stopPropagation();
-                              onDeleteTestCase(tc.id);
-                            }}
-                          >
-                            <X className="w-3.5 h-3.5" />
-                          </div>
-                        </TabsTrigger>
-                      ))}
-                    </TabsList>
-                    
-                    <FeatureGuard flag="custom_test_case_addtion">
-                      {controls?.add_test_case !== false && (
-                        <div className="flex items-center pl-2 shrink-0">
-                          <TooltipProvider delayDuration={0}>
-                            <Tooltip>
-                              <TooltipTrigger asChild>
-                                <Button
-                                  variant="ghost"
-                                  size="icon"
-                                  onClick={onAddTestCase}
-                                  className="h-7 w-7 rounded-full bg-muted/30 border border-black/20 dark:border-white/30 hover:bg-muted text-foreground/70 hover:text-foreground transition-colors ml-1"
-                                  disabled={loading}
-                                >
-                                  <Plus className="w-4 h-4" />
-                                </Button>
-                              </TooltipTrigger>
-                              <TooltipContent>
-                                <p>Add Custom Test Case</p>
-                              </TooltipContent>
-                            </Tooltip>
-                          </TooltipProvider>
-                        </div>
-                      )}
-                    </FeatureGuard>
-                  </div>
-                  <ScrollBar orientation="horizontal" className="h-1.5" />
-                </ScrollArea>
-              </div>
-
               <div className="flex-1 min-h-0">
                 <ScrollArea className="h-full" type="always">
+                  <div className="flex items-start justify-between bg-background/50 shrink-0 py-1.5 px-2 min-h-[36px]">
+                    {/* Scrollable Tabs List */}
+                    <ScrollArea className="flex-1 w-full whitespace-nowrap">
+                      <div className="flex items-center w-max p-1">
+                        <TabsList className="h-9 bg-transparent p-0 flex-nowrap justify-start gap-1 border-none shadow-none">
+                          {allTestCases.filter(tc => !tc.isSubmission).map((tc, index) => (
+                            <TabsTrigger
+                              key={tc.id}
+                              value={`case-${tc.id}`}
+                              className="text-xs px-2.5 h-7 rounded-full whitespace-nowrap bg-muted/30 border border-black/20 dark:border-white/30 text-black/80 dark:text-white/80 hover:text-black dark:hover:text-white data-[state=active]:bg-primary/15 data-[state=active]:border-primary/20 data-[state=active]:shadow-none data-[state=active]:text-black dark:data-[state=active]:text-white relative group shrink-0 transition-all font-medium"
+                            >
+                              {tc.isCustom ? `Case ${index + 1}` : `Case ${index + 1}`}
+                              {/* Delete button for all cases */}
+                              <div
+                                className="ml-2 -mr-1.5 hover:bg-primary/20 rounded-full p-1 cursor-pointer opacity-60 hover:opacity-100 transition-colors"
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  onDeleteTestCase(tc.id);
+                                }}
+                              >
+                                <X className="w-3.5 h-3.5" />
+                              </div>
+                            </TabsTrigger>
+                          ))}
+                        </TabsList>
+                        
+                        <FeatureGuard flag="custom_test_case_addtion">
+                          {controls?.add_test_case !== false && (
+                            <div className="flex items-center pl-2 shrink-0">
+                              <TooltipProvider delayDuration={0}>
+                                <Tooltip>
+                                  <TooltipTrigger asChild>
+                                    <Button
+                                      variant="ghost"
+                                      size="icon"
+                                      onClick={onAddTestCase}
+                                      className="h-7 w-7 rounded-full bg-muted/30 border border-black/20 dark:border-white/30 hover:bg-muted text-foreground/70 hover:text-foreground transition-colors ml-1"
+                                      disabled={loading}
+                                    >
+                                      <Plus className="w-4 h-4" />
+                                    </Button>
+                                  </TooltipTrigger>
+                                  <TooltipContent>
+                                    <p>Add Custom Test Case</p>
+                                  </TooltipContent>
+                                </Tooltip>
+                              </TooltipProvider>
+                            </div>
+                          )}
+                        </FeatureGuard>
+                      </div>
+                      <ScrollBar orientation="horizontal" className="h-1.5" />
+                    </ScrollArea>
+                  </div>
+
                   {allTestCases.filter(tc => !tc.isSubmission).map((tc) => {
                     const isFrontendProblem = algorithmMeta?.problemType === 'frontend' || algorithmMeta?.problem_type === 'frontend';
                     return (

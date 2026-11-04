@@ -10,6 +10,7 @@ import { trackEvent } from '@/lib/analytics';
 import { useApp } from '@/contexts/AppContext';
 import { useLanguagePreference } from './useLanguagePreference';
 import { Language } from '@/types/algorithm';
+import { getProblemUrl } from '@/utils/url';
 
 interface UseAlgorithmInteractionsProps {
     user: any;
@@ -44,7 +45,8 @@ export const useAlgorithmInteractions = ({
     const [savedCode, setSavedCode] = useState<string>("");
     const { preferredLanguage, setPreferredLanguage } = useLanguagePreference('editor');
     const isSqlProblem = algorithm?.problemType === 'sql' || algorithm?.problem_type === 'sql' || algorithm?.problem_type === 'SQL' || algorithm?.problemType === 'SQL';
-    const selectedLanguage = isSqlProblem ? 'sql' : preferredLanguage;
+    const isFrontendProblem = algorithm?.problemType === 'frontend' || algorithm?.problem_type === 'frontend';
+    const selectedLanguage = isSqlProblem ? 'sql' : isFrontendProblem ? 'typescript' : preferredLanguage;
     const [codeCache, setCodeCache] = useState<Record<string, string>>({});
     const [isUserModified, setIsUserModified] = useState(false);
     const latestCodeRef = useRef(savedCode);
@@ -423,12 +425,17 @@ export const useAlgorithmInteractions = ({
     }, [user, algorithmId, userVote, likes, dislikes, algorithm]);
 
     const handleRandomProblem = useCallback(async () => {
-        const { data } = await supabase.from('algorithms').select('id');
+        if (filteredAlgorithms && filteredAlgorithms.length > 0) {
+            const random = filteredAlgorithms[Math.floor(Math.random() * filteredAlgorithms.length)];
+            router.push(getProblemUrl(random));
+            return;
+        }
+        const { data } = await supabase.from('algorithms').select('id, problem_type');
         if (data && data.length > 0) {
             const random = data[Math.floor(Math.random() * data.length)];
-            router.push(`/problem/${random.id}`);
+            router.push(getProblemUrl(random));
         }
-    }, [router]);
+    }, [router, filteredAlgorithms]);
 
     const handlePreviousProblem = useCallback(async () => {
         if (!algorithm || !supabase) return;
@@ -438,7 +445,7 @@ export const useAlgorithmInteractions = ({
                 const currentIndex = filteredAlgorithms.findIndex(a => a.id === algorithm.id || a.slug === algorithm.slug || a.id === algorithmId);
                 if (currentIndex > 0) {
                     const prevAlgo = filteredAlgorithms[currentIndex - 1];
-                    router.push(`/problem/${prevAlgo.slug || prevAlgo.id}`);
+                    router.push(getProblemUrl(prevAlgo));
                     return;
                 } else if (currentIndex === 0) {
                     toast.info("No previous problem found. You are at the start!");
@@ -449,14 +456,14 @@ export const useAlgorithmInteractions = ({
             if (typeof algorithm.serial_no === 'number') {
                 const { data: prevAlgo } = await supabase
                     .from('algorithms')
-                    .select('id, serial_no')
+                    .select('id, serial_no, problem_type')
                     .lt('serial_no', algorithm.serial_no)
                     .order('serial_no', { ascending: false })
                     .limit(1)
                     .maybeSingle();
 
                 if (prevAlgo) {
-                    router.push(`/problem/${prevAlgo.id}`);
+                    router.push(getProblemUrl(prevAlgo));
                     return;
                 }
             }
@@ -475,7 +482,7 @@ export const useAlgorithmInteractions = ({
                 const currentIndex = filteredAlgorithms.findIndex(a => a.id === algorithm.id || a.slug === algorithm.slug || a.id === algorithmId);
                 if (currentIndex >= 0 && currentIndex < filteredAlgorithms.length - 1) {
                     const nextAlgo = filteredAlgorithms[currentIndex + 1];
-                    router.push(`/problem/${nextAlgo.slug || nextAlgo.id}`);
+                    router.push(getProblemUrl(nextAlgo));
                     return;
                 } else if (currentIndex === filteredAlgorithms.length - 1) {
                     toast.info("You have reached the end of the list!");
@@ -487,14 +494,14 @@ export const useAlgorithmInteractions = ({
             if (typeof algorithm.serial_no === 'number') {
                 const { data: nextAlgo } = await supabase
                     .from('algorithms')
-                    .select('id, serial_no')
+                    .select('id, serial_no, problem_type')
                     .gt('serial_no', algorithm.serial_no)
                     .order('serial_no', { ascending: true })
                     .limit(1)
                     .maybeSingle(); // Use maybeSingle() as we expect at most one, or null if none
 
                 if (nextAlgo) {
-                    router.push(`/problem/${nextAlgo.id}`);
+                    router.push(getProblemUrl(nextAlgo));
                     return;
                 }
             }

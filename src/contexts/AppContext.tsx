@@ -87,17 +87,32 @@ export function AppProvider({ children }: { children: ReactNode }) {
 
   const [activeListType, setActiveListType] = useState<string>('all');
 
+  const normalizeListType = (type: string): string => {
+    const lower = type.toLowerCase();
+    if (lower === 'blind') return 'blind75';
+    if (lower === 'rulcode150') return 'blind150';
+    if (lower === 'corealgo') return 'core';
+    return type;
+  };
+
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const saved = localStorage.getItem('rulcode_active_list_type');
-      if (saved) setActiveListType(saved);
+      if (saved) {
+        const normalized = normalizeListType(saved);
+        setActiveListType(normalized);
+        if (normalized !== saved) {
+          localStorage.setItem('rulcode_active_list_type', normalized);
+        }
+      }
     }
   }, []);
 
   const updateActiveListType = (type: string) => {
-    setActiveListType(type);
+    const normalized = normalizeListType(type);
+    setActiveListType(normalized);
     if (typeof window !== 'undefined') {
-      localStorage.setItem('rulcode_active_list_type', type);
+      localStorage.setItem('rulcode_active_list_type', normalized);
     }
   };
 
