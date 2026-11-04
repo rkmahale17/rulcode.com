@@ -5,6 +5,7 @@ import Script from "next/script";
 import dynamic from "next/dynamic";
 
 import {
+  TopicTreeSkeleton,
   InteractiveSandboxSkeleton,
   ScratchpadSkeleton,
   PracticeQuestionBankSkeleton,
@@ -14,6 +15,16 @@ import {
 } from "@/components/Home/sections/HomeSectionSkeletons";
 
 // ── Below-the-fold secondary sections (lazy loaded with individual skeletons to prioritize critical content FCP) ───
+const TopicTreeSection = dynamic(
+  () =>
+    import("@/components/Home/sections/TopicTreeSection").then((m) => ({
+      default: m.TopicTreeSection,
+    })),
+  {
+    loading: () => <TopicTreeSkeleton />,
+  }
+);
+
 const DashboardWidgets = dynamic(() =>
   import("@/components/listing/DashboardWidgets").then((m) => ({
     default: m.DashboardWidgets,
@@ -229,6 +240,7 @@ export default function Page() {
       />
       <div className="min-h-screen bg-white dark:bg-black text-[#1A1A1A] dark:text-white overflow-x-hidden relative w-full">
         <HeroSection />
+        <TopicTreeSection />
         <TestimonialsSection />
         <DashboardWidgets />
 

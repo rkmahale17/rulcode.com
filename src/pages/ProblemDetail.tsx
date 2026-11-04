@@ -102,18 +102,33 @@ const ProblemDetail: React.FC = () => {
     if (!allAlgorithms) return [];
     if (!activeListType || activeListType === 'all') return allAlgorithms;
 
-    return allAlgorithms.filter(algo => {
-      const algoListType = (algo.list_type || (algo as any).listType || 'core').toLowerCase();
-      const currentListType = activeListType.toLowerCase();
+    const rawListType = activeListType.toLowerCase();
+    const currentListType =
+      rawListType === 'blind'
+        ? ListType.Blind75
+        : rawListType === 'rulcode150'
+          ? ListType.Blind150
+          : rawListType === 'corealgo'
+            ? ListType.Core
+            : rawListType;
 
-      if (currentListType === 'core') {
-        return algoListType === 'core' || algoListType === 'core+blind75';
-      } else if (currentListType === 'blind75') {
-        return algoListType === 'blind75' || algoListType === 'core+blind75';
-      } else if (currentListType === 'core+blind75') {
-        return algoListType === 'core+blind75';
+    return allAlgorithms.filter(algo => {
+      const listTypes =
+        algo.listTypes || (algo.list_type ? [algo.list_type] : ['core']);
+      const normalizedListTypes = listTypes.map((t: string) => {
+        const lower = t.toLowerCase();
+        if (lower === 'corealgo') return ListType.Core;
+        if (lower === 'blind') return ListType.Blind75;
+        if (lower === 'rulcode150') return ListType.Blind150;
+        return lower;
+      });
+      if (currentListType === ListType.Blind150) {
+        return (
+          normalizedListTypes.includes(ListType.Blind150) ||
+          normalizedListTypes.includes(ListType.Blind75)
+        );
       }
-      return true;
+      return normalizedListTypes.includes(currentListType);
     });
   }, [allAlgorithms, activeListType]);
 

@@ -4,6 +4,7 @@ import { supabase } from '@/integrations/supabase/client';
 import ProblemDetailClient from '@/app/problem/[slug]/ProblemDetailClient';
 import Script from 'next/script';
 import { headers } from 'next/headers';
+import { Suspense } from 'react';
 
 interface ProblemPageProps {
   params: Promise<{ slug: string }>;
@@ -135,13 +136,13 @@ export async function generateMetadata({ params }: ProblemPageProps): Promise<Me
     description: cleanDesc,
     keywords: `${algorithm.category || ''}, algorithms, ${algorithm.name}, coding interview, visualization`,
     alternates: {
-      canonical: `/frontend/problem/${algorithm.id}`,
+      canonical: `/frontend/blind75/${algorithm.id}`,
     },
     openGraph: {
       title: cleanTitle,
       description: cleanDesc,
       images: [algorithm.image || 'https://rulcode.com/og-image.png'],
-      url: `/frontend/problem/${algorithm.id}`,
+      url: `/frontend/blind75/${algorithm.id}`,
     },
   };
 }
@@ -179,7 +180,7 @@ export default async function ProblemPage({ params }: ProblemPageProps) {
         "@type": "ListItem",
         "position": 3,
         "name": algorithm.name,
-        "item": `https://rulcode.com/frontend/problem/${algorithm.id}`
+        "item": `https://rulcode.com/frontend/blind75/${algorithm.id}`
       }
     ]
   };
@@ -232,7 +233,7 @@ export default async function ProblemPage({ params }: ProblemPageProps) {
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://rulcode.com/frontend/problem/${algorithm.id}`
+      "@id": `https://rulcode.com/frontend/blind75/${algorithm.id}`
     },
     "about": {
       "@type": "Thing",
@@ -255,11 +256,13 @@ export default async function ProblemPage({ params }: ProblemPageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(techArticleJsonLd) }}
       />
-      <ProblemDetailClient 
-        initialAlgorithm={algorithm} 
-        slug={slug} 
-        isCrawler={isCrawler}
-      />
+      <Suspense fallback={<div>Loading problem details...</div>}>
+        <ProblemDetailClient 
+          initialAlgorithm={algorithm} 
+          slug={slug} 
+          isCrawler={isCrawler}
+        />
+      </Suspense>
     </>
   );
 }

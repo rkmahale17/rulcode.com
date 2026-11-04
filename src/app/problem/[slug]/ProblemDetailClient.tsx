@@ -27,7 +27,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { CodeRunnerRef } from "@/components/CodeRunner/CodeRunner";
 import { CodeWorkspacePanel } from "@/components/algorithm/CodeWorkspacePanel";
-import { LIST_TYPE_LABELS } from "@/types/algorithm";
+import { LIST_TYPE_LABELS, ListType } from "@/types/algorithm";
 import { LanguageSelector } from "@/components/CodeRunner/LanguageSelector";
 import Link from "next/link";
 // Refactored Components
@@ -151,20 +151,55 @@ const ProblemDetailClient: React.FC<ProblemDetailClientProps> = ({
     enabled: !!user && !!algorithmIdOrSlug,
   });
 
+  const isSqlProblem = activeAlgorithm?.problemType === 'sql' || activeAlgorithm?.problem_type === 'sql' || activeAlgorithm?.problem_type === 'SQL' || activeAlgorithm?.problemType === 'SQL';
+  const isFrontendProblem = activeAlgorithm?.problemType === 'frontend' || activeAlgorithm?.problem_type === 'frontend';
+
+  const effectiveListType = useMemo(() => {
+    if (isFrontendProblem) {
+      return activeListType === ListType.FrontendBasics ? ListType.FrontendBasics : "all";
+    }
+    if (isSqlProblem) {
+      return activeListType === ListType.SqlBasics ? ListType.SqlBasics : "all";
+    }
+    if (activeListType === ListType.FrontendBasics || activeListType === ListType.SqlBasics) {
+      return "all";
+    }
+    return activeListType || "all";
+  }, [activeListType, isFrontendProblem, isSqlProblem]);
+
   const filteredAlgorithms = useMemo(() => {
     if (!allAlgorithms) return [];
-    if (!activeListType || activeListType === "all") return allAlgorithms;
+    if (!effectiveListType || effectiveListType === "all") return allAlgorithms;
 
-    const currentListType = activeListType.toLowerCase();
+    const rawListType = effectiveListType.toLowerCase();
+    const currentListType =
+      rawListType === "blind"
+        ? ListType.Blind75
+        : rawListType === "rulcode150"
+          ? ListType.Blind150
+          : rawListType === "corealgo"
+            ? ListType.Core
+            : rawListType;
+
     return allAlgorithms.filter((algo) => {
       const listTypes =
         algo.listTypes || (algo.list_type ? [algo.list_type] : []);
-      const normalizedListTypes = listTypes.map((t: string) =>
-        t.toLowerCase() === "corealgo" ? "core" : t.toLowerCase(),
-      );
+      const normalizedListTypes = listTypes.map((t: string) => {
+        const lower = t.toLowerCase();
+        if (lower === "corealgo") return ListType.Core;
+        if (lower === "blind") return ListType.Blind75;
+        if (lower === "rulcode150") return ListType.Blind150;
+        return lower;
+      });
+      if (currentListType === ListType.Blind150) {
+        return (
+          normalizedListTypes.includes(ListType.Blind150) ||
+          normalizedListTypes.includes(ListType.Blind75)
+        );
+      }
       return normalizedListTypes.includes(currentListType);
     });
-  }, [allAlgorithms, activeListType]);
+  }, [allAlgorithms, effectiveListType]);
 
   const totalCount = filteredAlgorithms.length;
   const completedCount = useMemo(() => {
@@ -657,7 +692,7 @@ const ProblemDetailClient: React.FC<ProblemDetailClientProps> = ({
           handlePreviousProblem={interactions.handlePreviousProblem}
           handleShare={interactions.handleShare}
           onToggleSidebar={() => setIsSidebarOpen(true)}
-          activeListType={activeListType}
+          activeListType={effectiveListType}
           onOpenRulo={() => {
             if (layout.leftTabs.includes("rulo")) {
               layout.setActiveLeftTab("rulo");
@@ -949,12 +984,12 @@ const ProblemDetailClient: React.FC<ProblemDetailClientProps> = ({
           <div className="flex items-center justify-between py-2 px-4 pr-14 border-b border-border bg-background gap-4">
             <div className="flex items-center gap-4 flex-1 min-w-0">
               <Select
-                value={activeListType || "all"}
+                value={effectiveListType}
                 onValueChange={(val) => setActiveListType(val as any)}
               >
                 <SelectTrigger className="border border-border/80 bg-muted/50 hover:bg-muted/85 focus:ring-0 px-3 h-8 text-sm font-medium w-fit min-w-[130px] gap-2 transition-colors rounded-md shrink-0">
                   <SelectValue>
-                    {LIST_TYPE_LABELS[activeListType as any] || "Problem List"}
+                    {LIST_TYPE_LABELS[effectiveListType as any] || "Problem List"}
                   </SelectValue>
                 </SelectTrigger>
                 <SelectContent>
