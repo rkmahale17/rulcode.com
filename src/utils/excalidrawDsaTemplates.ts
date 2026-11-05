@@ -5,7 +5,7 @@ const baseElement = () => ({
   versionNonce: Math.floor(Math.random() * 1000000000),
   isDeleted: false,
   fillStyle: "hachure",
-  strokeWidth: 2,
+  strokeWidth: 1,
   strokeStyle: "solid",
   roughness: 1,
   opacity: 100,

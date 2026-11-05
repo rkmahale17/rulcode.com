@@ -218,8 +218,9 @@ export const WhiteboardComponent = ({
       elements: restoreData?.elements ? JSON.parse(JSON.stringify(restoreData.elements)) : undefined,
       appState: {
         ...(restoreData?.appState || {}),
+        currentItemStrokeWidth: 1,
         activeTool: {
-          type: "selection",
+          type: "freedraw",
           customType: null,
           locked: false, // Keep tool unlocked by default
         },
